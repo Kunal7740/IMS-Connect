@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder="static", template_folder="template")
+app = Flask(__name__, static_folder="frontend/static", template_folder="frontend/template")
 CORS(app)
 
 # Database Configuration
