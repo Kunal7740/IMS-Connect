@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMD-Connect</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: #333;
+        }
+
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card h3 {
+            background: #3b5998;
+            color: white;
+            padding: 15px 0;
+            margin: 0;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .card p {
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+            background: #4caf50;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: #45a049;
+        }
+
+        footer {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        GreenFuture's IMS-Connect
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>Submit Idea</h3>
+            <p>Share your innovative ideas with us and help drive creativity and solutions.</p>
+            <a href="ideas.html">Go to Submit</a>
+        </div>
+
+        <div class="card">
+            <h3>Evaluate Idea</h3>
+            <p>For Innovation Mangaers: Provide feedback and scores for submitted ideas to promote the best ones.</p>
+            <a href="evaluate.html">Go to Evaluate</a>
+        </div>
+
+        <div class="card">
+            <h3>Ideas and Scores</h3>
+            <p>View ideas along with their evaluated scores.</p>
+            <a href="ideas_with_evaluations.html">View Scores</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 IMS-Connect | Empowering Innovation: GreenFuture's Transformation through Technology 
+    </footer>
+</body>
+</html>

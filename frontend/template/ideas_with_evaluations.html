@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas with Evaluations</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7fc; /* Light background for better readability */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 900px;
+        }
+
+        .idea-card {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background-color: #007bff; /* Blue for the header */
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .idea-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0056b3; /* Dark blue for the title */
+        }
+
+        .idea-status {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #28a745; /* Green for "Reviewed" status */
+        }
+
+        .evaluation-score {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffc107; /* Yellow for the score */
+        }
+
+        .evaluation-feedback {
+            font-size: 1rem;
+            color: #6c757d; /* Gray for feedback */
+            padding: 5px 0;
+        }
+
+        .evaluation-score span,
+        .evaluation-feedback span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Evaluated Innovative Ideas</h2>
+        <div id="evaluatedIdeasList"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="ideas-with-evaluations.js"></script>
+</body>
+</html>
